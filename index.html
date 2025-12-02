@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimedia Mavericks</title>
+   <link rel="icon" type="image/png" href="FAVICON.png">
+  <style>
+    body {
+      font-family: poppins, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #212121;
+      font-size: 28px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fdbc66;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #EADCA6;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+
+    .card a {
+      display: block;
+      margin: 8px auto 0;
+      background: #706C61;
+      color: #EADCA6;
+      padding: 4px 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.2s;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .card a:hover {
+      background: #3f3f3f60;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      .card {
+        padding: 15px;
+      }
+      .card h2 {
+        font-size: 18px;
+      }
+    }
+
+    .jump span {
+      display: inline-block;
+      animation: jump 2.50s ease-in-out infinite;
+    }
+    @keyframes jump {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const title = document.querySelector("h1");
+      const text = title.innerText;
+      title.innerHTML = "";
+      text.split("").forEach((char, i) => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.animationDelay = (i * 0.1) + "s";
+        title.appendChild(span);
+      });
+      title.classList.add("jump");
+    });
+  </script>
+</head>
+<body>
+
+  <h1>Multimedia Mavericks</h1>
+
+  <div class="grid">
+
+    <div class="card"><h2>FUTSAL</h2><a href="https://drive.google.com/drive/folders/11Jb478DIIXqDx9tGcnxdMBc-mz6zL345?fbclid=IwY2xjawOcFjtleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEe7_7oCNcPD5PjrUmfwru9qkFDhgQpYmM1-wqgPFXbtOF6kXHiIzDKvG5uIfE_aem_C3q8d7F7OOR4-ZrUzf5i8A" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>MR & MS</h2><a href="https://drive.google.com/drive/folders/16sqoXI-tOWsIjZRBAxBbqOGGaJuctmQu?usp=sharing&fbclid=IwY2xjawOcFUdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEebH00pobFVai0FlCyVrFYqfHH9Ri777Sb6hLefiGdAwc0byTVA_hy9OaYJFQ_aem_fTayKbmVpuRh3CL_A0tJaw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>CHEERDANCE</h2><a href="https://drive.google.com/drive/folders/15z1LK2xvPf8q3N4KxP0pucU0vAlvgaX7?fbclid=IwY2xjawOcFXpleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeLONT08OsuXVl1nTf-Tgm0d7KHbgbQjfbuAiHQC_CwxCOk8ZlqeWQq-w3jqY_aem_H7E6gf8h0PhmZ2krmDW-Rg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>CHESS</h2><a href="https://drive.google.com/drive/folders/1BASwOccXvrLDe4IYmdrU2sQ4seWSCFwR?fbclid=IwY2xjawOcFXpleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeLONT08OsuXVl1nTf-Tgm0d7KHbgbQjfbuAiHQC_CwxCOk8ZlqeWQq-w3jqY_aem_H7E6gf8h0PhmZ2krmDW-Rg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>BADMINTON</h2><a href="https://drive.google.com/drive/folders/1v65HkwJaNrR42a8w1byAuRt23iln6nnN?fbclid=IwY2xjawOcFipleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeequzvYjncjnP88QQ4s6T9bLzsuLrrrlzLS3kdLRIFUesIX3D3r9szPPSzh0_aem_z5EIcyaAZ3fhh-9uo3RmTg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>TABLE TENNIS</h2><a href="https://drive.google.com/drive/folders/1K-kuIJmRClbDo7W0yzVe-hfZUmHwT-r5?fbclid=IwY2xjawOcFuRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEerrZv26AzO5gJF-vu-Jqu1PyfND22YIuz_nMRD0diV_joYPPsNRZgmQGuP2w_aem_9iTwv3TPonwFoFThWqk-bg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>VOLLEYBALL</h2><a href="https://drive.google.com/drive/folders/1yr03qEfKKUv8PDTNU_JKconSsA7s_3kT?fbclid=IwY2xjawOcFlZleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeOgE5zbZvkFBXJhZJiUe_O2tFRbikqFmxVjaAnoJCjuVOzAV5KALtkTi9_Gw_aem_AJsnKP6rxhT2om30P0GfLg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>BASKETBALL</h2><a href="https://drive.google.com/drive/folders/1-AaSO8tlzrKBJK8412DUxZJIgUehfr3t?fbclid=IwY2xjawOcFq5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeJPYbR-imxHK_VDjj7tOi5zizXNYn-bYr4eBsTwPrBTznuSie4An0ZUMT9bg_aem_SupMQua_nmDf8NGHoHFWKw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>ESPORTS</h2><a href="https://drive.google.com/drive/folders/1NKcsUywJxxkSSYHN4un4DhrZQXJI-Kf0?fbclid=IwY2xjawOcFxhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEePp2v4NP_UbS9tf0WijtqWYRoJA49CJQG3-42f4P9BM5MRn9xUsD1a_Zhur0_aem_cB-Eo-ERaFrpvu8sQ9oxug" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>DANCE SPORT</h2><a href="https://drive.google.com/drive/folders/1F4SzYDuXfuxJSfre7i_FSA2LufuvSOlz?fbclid=IwY2xjawOcFstleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEe2nVX_7uVo7oQ3YJzWLN8F9Xxpl0uR1tIR2ICgHeoyWfJgEZkWgokoH_53Zs_aem_Ctho_A7ZwXOUxeFqigicDg" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>ARNIS</h2><a href="https://drive.google.com/drive/folders/15uyVBD9SEkKytJ6l0C8eLtOwUBcWmFi_?fbclid=IwY2xjawOcF1tleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeChU8EvCOAWy0IQM5QIM0ZKcMHHaGa3nRJY4hv9SpHNWHQc6Mft2cfryIYZI_aem_VV5JyhVqnUSXG8HL7wWpIw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>SEPAK</h2><a href="https://drive.google.com/drive/folders/1FGgjQWHYjWTrLhltMuiNFS-jYT9NG6p-?fbclid=IwY2xjawOcF15leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEewC6UaYp0HCOWqDZnsWSOK-q10VfoTU2xqBHA43eNFAKwXTgjiUb90SaC_Uc_aem_rKZYwY8Q9A8JPM7NgcJc-Q" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>ATLETHICS</h2><a href="https://drive.google.com/drive/folders/1m6DsZf2XiPqmiFs362JgoCtgJmYjpmuK?fbclid=IwY2xjawOcF4lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEePSb-kbbL7s9xAUgMsBBKe2mNOvlL1qyQIHVVnLXSevE-I7RzuiHQaPj-n88_aem_BkMXbFEMjz4Dd1PqL1KLXA" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>TAEKWONDO</h2><a href="https://drive.google.com/drive/u/0/folders/1VTvl9_6J-3ZbZ4e6XP2jmuD0GoDj-IY8?fbclid=IwY2xjawOcF9RleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeuLFz9sD_NWLByxTCVr4fMGdpjDvJ2j8l_VZNGFPrfP8ThvUS6lO5vcAy9tQ_aem_R23WIzrrNFINJKh_Vg1Xkw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>KARATEDO</h2><a href="https://drive.google.com/drive/u/0/folders/15UGJBw7jhIKI6nYIpQBGtGZ5zu51p3JA?fbclid=IwY2xjawOcF9RleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeuLFz9sD_NWLByxTCVr4fMGdpjDvJ2j8l_VZNGFPrfP8ThvUS6lO5vcAy9tQ_aem_R23WIzrrNFINJKh_Vg1Xkw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+    <div class="card"><h2>TAEKWONDO & KARATEDO</h2><a href="https://drive.google.com/drive/u/0/folders/1mYYk7f4tEvBr73HA1_W5Xkw3YbPEUOjI?fbclid=IwY2xjawOcF9RleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeuLFz9sD_NWLByxTCVr4fMGdpjDvJ2j8l_VZNGFPrfP8ThvUS6lO5vcAy9tQ_aem_R23WIzrrNFINJKh_Vg1Xkw" target="_blank" rel="noopener noreferrer">open link</a></div>
+
+</div>
+
+
+</body>
+</html>
